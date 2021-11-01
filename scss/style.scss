@@ -1,0 +1,113 @@
+* {
+  font-size: 10;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  box-shadow: 0 1rem 1rem -1rem #ccc;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.kit {
+  width: 28rem;
+  height: 100%;
+  border-right: solid 0.01rem #ddd;
+  overflow: auto;
+}
+
+.kit-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-top: solid 0.01rem #e6e6e6;
+  &-label {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  &-hex {
+    &-input-container {
+      display: flex;
+      flex-direction: row;
+      margin: 0.2rem 0;
+    }
+    input {
+      width: 8rem;
+    }
+  }
+  &-hash {
+    &-input-container {
+      display: flex;
+      input {
+        width: 11.1rem;
+      }
+    }
+    textarea {
+      resize: none;
+    }
+  }
+  &-equality {
+    &-mid-container {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    &-equality-container {
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.5rem;
+      margin-left: 1rem;
+      &.green {
+        background-color: #75c975;
+      }
+      &.red {
+        background-color: #d8a6a6;
+      }
+    }
+  }
+}
+
+.decoder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  &-label {
+    margin-bottom: 0.5rem;
+  }
+  &-tools-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  &-tool {
+    width: 31%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    textarea {
+      height: 95%;
+    }
+  }
+}
